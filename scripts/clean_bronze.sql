@@ -10,7 +10,8 @@ BEGIN
     TRUNCATE bronze.erp_cust_az12;
     TRUNCATE bronze.erp_loc_a101;
     TRUNCATE bronze.erp_px_cat_g1v2;
-
+    
+    -- Custom message
     RAISE NOTICE 'Bronze tables have been successfully truncated.';
 END;
 $$;
