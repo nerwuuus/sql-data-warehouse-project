@@ -12,3 +12,6 @@ BEGIN
         TRUNCATE bronze.erp_px_cat_g1v2;
 END;
 $$;
+
+-- Invoke a procedure
+CALL bronze.clean_bronze();
