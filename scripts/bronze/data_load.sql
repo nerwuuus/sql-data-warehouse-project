@@ -1,4 +1,4 @@
--- Perform the full load on CRM & ERP tables
+-- Perform the full load on bronze CRM & ERP tables
 TRUNCATE TABLE bronze.crm_cust_info;
 COPY bronze.crm_cust_info
 FROM 'C:\Users\a817628\OneDrive - ATOS\Desktop\Data Analytics\SQL\Data with Baraa\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
