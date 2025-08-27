@@ -23,6 +23,7 @@ CREATE TABLE silver.crm_cust_info (
 DROP TABLE IF EXISTS silver.crm_prd_info;
 CREATE TABLE silver.crm_prd_info (
     prd_id INT,
+    cat_id VARCHAR(50),
     prd_key VARCHAR(50),
     prd_nm VARCHAR(50),
     prd_cost INT,
@@ -31,6 +32,7 @@ CREATE TABLE silver.crm_prd_info (
     prd_end_dt DATE,
     dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
 
 DROP TABLE IF EXISTS silver.crm_sales_details;
 CREATE TABLE silver.crm_sales_details (
