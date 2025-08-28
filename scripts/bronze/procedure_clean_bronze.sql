@@ -9,8 +9,12 @@ Script Purpose:
   - Prints a custom message after execution.
 ============================================================================
 */
-CREATE OR REPLACE FUNCTION bronze.clean_bronze()
-RETURNS void
+-- Invoke a procedure
+CALL bronze.clean_bronze();
+
+DROP FUNCTION IF EXISTS bronze.clean_bronze(); -- Only needed if a function with this name
+
+CREATE OR REPLACE PROCEDURE bronze.clean_bronze()
 LANGUAGE plpgsql
 AS $$
 BEGIN
@@ -26,5 +30,3 @@ BEGIN
 END;
 $$;
 
--- Invoke a procedure
-CALL bronze.clean_bronze();
